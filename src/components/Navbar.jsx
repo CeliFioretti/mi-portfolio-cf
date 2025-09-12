@@ -7,15 +7,16 @@ function Navbar() {
     const [open, setOpen] = useState(false)
 
     return (
-        <header className='fondo-negro text-amber-50 p-4'>
+        <header className='text-amber-50 p-4'>
             <div className='flex justify-between items-center md:hidden'>
-                <button onClick={() => { setOpen(!open) }} className='text-amber-50 focus:outline-none'>
+                <button onClick={() => { setOpen(!open) }} className='text-amber-50 focus:outline-none cursor-pointer'>
                     ☰
                 </button>
             </div>
 
             {/** Menú desplegable en sm */}
-            <nav className={`${open ? 'block' : 'hidden'} md:hidden mt-4 space-y-2`}>
+            <nav className={`overflow-hidden transition-all duration-300 ease-in-out md:hidden ${open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                } mt-4 space-y-2`}>
                 <a className='block hover:text-amber-500 px-4 py-2 text-center' href="#">Inicio</a>
                 <a className='block hover:text-amber-500 px-4 py-2 text-center' href="#">Sobre mí</a>
                 <a className='block hover:text-amber-500 px-4 py-2 text-center' href="#">Proyectos</a>
@@ -35,8 +36,6 @@ function Navbar() {
                     <a className='block hover:text-amber-500 px-4 py-2 text-center' href="#">Contacto</a>
                 </nav>
             </div>
-
-
         </header>
     )
 }
