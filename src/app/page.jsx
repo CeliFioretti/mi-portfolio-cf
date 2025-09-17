@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '@/components/Navbar'
+import Carrusel from '@/components/Carrusel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { faUser, faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -57,8 +58,8 @@ function Home() {
           </div>
         </main>
       </div>
-      {/** Sobre mí */}
 
+      {/** Sobre mí */}
       <div className='flex flex-col items-center justify-center font-bold fondo-blanco'>
         <h2 className='text-5xl my-8'>Sobre mí</h2>
 
@@ -81,8 +82,6 @@ function Home() {
           </div>
           {/** Box 2 */}
           <div>
-
-
             <div className='text-zinc-950 text-sm flex items-center justify-center gap-2 p-2'>
               <FontAwesomeIcon icon={faEnvelope} className="hover:text-amber-500 transition-colors duration-300 text-2xl" />
               <div className='data-box text-lg rounded-lg p-1.5 w-96 font-normal'>
@@ -90,13 +89,13 @@ function Home() {
               </div>
             </div>
 
-
             <div className='text-zinc-950 text-sm flex items-center justify-center gap-2 p-2'>
               <FontAwesomeIcon icon={faPhone} className="hover:text-amber-500 transition-colors duration-300 text-2xl" />
               <div className='data-box text-lg rounded-lg p-1.5 w-96 font-normal'>
                 <span className='font-medium'>Teléfono</span>: 2612525080
               </div>
             </div>
+
           </div>
         </div>
 
@@ -126,8 +125,20 @@ function Home() {
 
         </div>
       </div>
-      {/** Proyectos */}
 
+      {/** Proyectos */}
+      <div className='bg-gradient-to-br from-black via-gray-900 to-neutral-800 flex flex-col items-center justify-center'>
+        <h2 className='text-5xl my-8 fuente-blanca'>Proyectos</h2>
+
+        {/** Carrusel de proyectos */}
+        <div className='flex justify-center items-center mb-10 px-4'>
+            <div className='w-full max-w-4xl mx-auto p-6 bg-gradient-to-r from-red-500 to-yellow-400 rounded-xl shadow-lg text-white'>
+              <Carrusel/>
+            </div>
+        </div>
+
+
+      </div>
 
       {/** Educación */}
 
