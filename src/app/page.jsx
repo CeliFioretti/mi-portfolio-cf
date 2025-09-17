@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '@/components/Navbar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { faUser, faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 function Home() {
   return (
@@ -57,8 +58,53 @@ function Home() {
         </main>
       </div>
       {/** Sobre mí */}
-      <div>
-        
+
+      <div className='flex flex-col items-center justify-center font-bold fondo-blanco'>
+        <h2 className='text-5xl my-8'>Sobre mí</h2>
+
+        <div>
+            <div className='text-zinc-950 text-sm flex items-center justify-center gap-2'>
+              <FontAwesomeIcon icon={faUser} className="hover:text-amber-500 transition-colors duration-300 text-2xl" />
+              <div className='data-box text-lg rounded-lg p-1.5'>
+                Edad: 29
+              </div>
+            </div>
+
+            <div className='text-zinc-950 text-sm flex items-center justify-center gap-2'>
+              <FontAwesomeIcon icon={faEnvelope} className="hover:text-amber-500 transition-colors duration-300 text-2xl" />
+              <div className='data-box text-lg rounded-lg p-1.5'>
+                Correo: <span className='text-blue-600 underline hover:text-blue-500'>celinainesfioretti@gmail.com</span>
+              </div>
+            </div>
+
+            <div className='text-zinc-950 text-sm flex items-center justify-center gap-2'>
+              <FontAwesomeIcon icon={faLocationDot} className="hover:text-amber-500 transition-colors duration-300 text-2xl" />
+              <div className='data-box text-lg rounded-lg p-1.5'>
+                Residencia: Argentina, Mendoza
+              </div>
+
+            </div>
+            <div className='text-zinc-950 text-sm flex items-center justify-center gap-2'>
+              <FontAwesomeIcon icon={faPhone} className="hover:text-amber-500 transition-colors duration-300 text-2xl" />
+              <div className='data-box text-lg rounded-lg p-1.5'>
+                Teléfono: 2612525080
+              </div>
+            </div>
+        </div>
+
+        {/**
+         * 
+         * <div>
+          <p>Comencé hace ya unos años con interés por este fantástico mundo de la programación.
+            Realicé algunos cursos y al final decidí iniciar una carrera profesional.
+            En esos años logré afianzar diversos conceptos que abrieron mi mente para mejorar en el desarrollo de aplicaciones.
+            También obtuve experiencia trabajando en equipo con mis compañeros y desarrollando pequeños y grandes proyectos.
+            Actualmente sigo instruyéndome en otras tecnologías mientras busco mi primer trabajo profesional.
+            <span>Actualmente sigo instruyéndome en otras tecnologías mientras busco mi primer trabajo profesional.</span></p>
+        </div>
+         * 
+         */}
+
       </div>
       {/** Proyectos */}
 

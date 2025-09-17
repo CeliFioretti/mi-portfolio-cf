@@ -43,3 +43,11 @@ body{
 .animate-pulse-glow {
   animation: pulse-glow 1.5s infinite;
 }
+
+.data-box{
+  background-color: #ffffff;
+}
+
+.fondo-blanco{
+  background-color: #eeeeee;
+}
