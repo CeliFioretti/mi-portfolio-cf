@@ -168,7 +168,7 @@ function Home() {
         <div className='w-3/4 flex items-center justify-center'>
           <div className='text-center'>
             {estudios.map((estudio, i) => (
-              <div>
+              <div key={i}>
                 <h3 className='py-1.5 text-sobre-mi-detalle font-semibold text-3xl mt-8'>{estudio.titulo}</h3>
                 <h4 className='text-xl italic font-light'>{estudio.instituto}</h4>
                 <p className='text-sobre-mi-detalle font-light mb-5'>{estudio.fecha}</p>
@@ -185,7 +185,58 @@ function Home() {
       </div>
 
       {/** Tecnologías */}
+      <div className='bg-gradient-to-br from-black via-gray-900 to-neutral-800 py-15'>
+        <h2 className='text-5xl mb-12 fuente-blanca flex flex-col items-center justify-center'>Tecnologías</h2>
 
+        <div className=''>
+          <div className=''>
+            <h3 className='bg-gradient-to-r from-red-500 to-yellow-400 text-4xl text-amber-50 ps-8 py-2 font-semibold'>Lenguajes de programación</h3>
+            <div className='flex gap-8 my-8 ps-8'>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="80" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="80" />
+            </div>
+          </div>
+
+          <div className=''>
+            <h3 className='bg-gradient-to-r from-red-500 to-yellow-400 text-4xl text-amber-50 ps-8 py-2 font-semibold'>Frameworks y Librerías</h3>
+            <div className='flex gap-8 my-8 ps-8'>
+              <img alt='react-logo' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="80" />
+              <div class="p-2 bg-white rounded-full flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="60" />
+              </div>
+
+              <div class="p-2 bg-white rounded-full flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="60" />
+              </div>
+
+              
+              <img src="https://cdn.simpleicons.org/tailwindcss/38B2AC" width="80" alt="Tailwind CSS" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="80" />
+            </div>
+          </div>
+
+          <div className=''>
+            <h3 className='bg-gradient-to-r from-red-500 to-yellow-400 text-4xl text-amber-50 ps-8 py-2 font-semibold'>Softwares y Herramientas</h3>
+            <div className='flex gap-8 my-8 ps-8'>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="80" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="80" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" width="80" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="80" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="80" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg" width="80" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="80" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" width="80" />
+            </div>
+          </div>
+
+          <div className=''>
+            <h3 className='bg-gradient-to-r from-red-500 to-yellow-400 text-4xl text-amber-50 ps-8 py-2 font-semibold'>Actualmente aprendiendo</h3>
+            <div className='flex gap-8 my-8 ps-8'>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="80" />
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/** Hablamos */}
 
@@ -194,3 +245,5 @@ function Home() {
 }
 
 export default Home
+
+
