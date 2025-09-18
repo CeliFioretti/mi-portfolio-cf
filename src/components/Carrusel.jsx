@@ -1,7 +1,10 @@
 'use client'
 
 import React from 'react'
-import { useState } from 'react'
+import { useKeenSlider } from 'keen-slider/react';
+import 'keen-slider/keen-slider.min.css';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
+
 
 const proyectos = [
     {
@@ -47,40 +50,61 @@ const logos = {
 };
 
 function Carrusel() {
+    const [sliderRef, instanceRef] = useKeenSlider({
+        loop: true,
+        mode: 'snap',
+        slides: { perView: 1 },
+        renderMode: "performance"
+    });
 
-    const [index, setIndex] = useState(0);
-    const proyecto = proyectos[index];
-
-    const siguiente = () => setIndex((index + 1) % proyectos.length);
-    const anterior = () => setIndex((index - 1 + proyectos.length) % proyectos.length);
 
     return (
-        <div className='flex flex-col items-center'>
-            <img src={proyecto.imagen} alt={proyecto.titulo} className='w-full max-h-96 object-cover rounded-lg mb-4' />
+        <div className='relative w-full max-w-4xl mx-auto'>
+            {/**Carrusel */}
+            <div ref={sliderRef} className="keen-slider rounded-xl overflow-hidden">
+                {proyectos.map((proyecto, i) => (
+                    <div key={i} className="keen-slider__slide min-w-full flex flex-col items-center p-4 sm:p-6 bg-neutral-900 rounded-xl text-white">
+                        <img src={proyecto.imagen} alt={proyecto.titulo} className="w-full h-auto max-h-[400px] object-cover rounded-lg mb-4" />
 
-            <h3 className='text-2xl md:text-3xl font-semibold text-zinc-950'>{proyecto.titulo}</h3>
-            <p className='text-base md:text-xl text-justify leading-relaxed mt-2 mb-2'>{proyecto.descripcion}</p>
+                        <h3 className="text-3xl font-semibold">{proyecto.titulo}</h3>
+                        <p className="text-xl text-justify leading-relaxed mt-2 mb-2">{proyecto.descripcion}</p>
 
-            <div className='flex flex-wrap gap-2 justify-center'>
-                {proyecto.tecnologias.map((tech, i) => (
-                    <img key={i} src={logos[tech]} alt={tech} className='h-8' />
+                        <div className="flex flex-wrap gap-2 justify-center">
+                            {proyecto.tecnologias.map((tech, i) => (
+                                <img key={i} src={logos[tech]} alt={tech} className="h-8" />
+                            ))}
+                        </div>
+
+                        <a
+                            href={proyecto.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-4 text-amber-400 text-lg hover:scale-105 transition-transform duration-300"
+                        >
+                            Ver en Github
+                        </a>
+                    </div>
                 ))}
             </div>
 
-            <a href={proyecto.github} target='_blank' rel='noopener noreferrer' className='mt-4 text-zinc-100 text-lg hover:scale-105 transition-transform duration-300'>
-                Ver en Github
-            </a>
+            {/**Flechas */}
+            <button
+                onClick={() => instanceRef.current?.prev()}
+                className="absolute top-1/2 -translate-y-1/2 -left-20 bg-zinc-600/40 hover:bg-black/70 text-white p-2 rounded-full"
+            >
+                <FaChevronLeft size={20} />
+            </button>
 
-            <div className='flex gap-4 mt-6'>
-                <button onClick={anterior} className='px-4 py-2 bg-amber-600 rounded hover:bg-amber-700'>
-                    ◀
-                </button>
-                <button onClick={siguiente} className='px-4 py-2 bg-amber-600 rounded hover:bg-amber-700'>
-                    ▶
-                </button>
-            </div>
-
+            <button
+                onClick={() => instanceRef.current?.next()}
+                className="absolute top-1/2 -translate-y-1/2 -right-20 bg-zinc-600/40 hover:bg-black/70 text-white p-2 rounded-full"
+            >
+                <FaChevronRight size={20} />
+            </button>
         </div>
+
+
+
     )
 }
 

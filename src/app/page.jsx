@@ -1,9 +1,27 @@
 import React from 'react'
 import Navbar from '@/components/Navbar'
 import Carrusel from '@/components/Carrusel';
+import ProyectosMobil from '@/components/ProyectosMobil';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { faUser, faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
+
+const estudios = [
+  {
+    titulo: 'Tecnica en Desarrollo de Aplicaciones Informáticas',
+    instituto: 'Instituto Universitario Aeronáutico (IUA)',
+    fecha: '2023 - 2025',
+    tipo_comprobante: 'Diploma',
+    terminado: true
+  },
+  {
+    titulo: 'Ciberseguridad de Google (8 cursos)',
+    instituto: 'Coursera',
+    fecha: '2025 - En curso',
+    tipo_comprobante: 'Certificado',
+    terminado: false
+  },
+]
 
 function Home() {
   return (
@@ -60,8 +78,8 @@ function Home() {
       </div>
 
       {/** Sobre mí */}
-      <div className='flex flex-col items-center justify-center font-bold fondo-blanco'>
-        <h2 className='text-5xl my-8'>Sobre mí</h2>
+      <div className='flex flex-col items-center justify-center font-bold fondo-blanco py-15'>
+        <h2 className='text-5xl mb-8 text-neutral-900'>Sobre mí</h2>
 
         <div className='md:flex items-center justify-center pb-10'>
           {/** Box 1 */}
@@ -101,7 +119,7 @@ function Home() {
 
         {/** Detalles Sobre mí */}
         <div className='w-3/4 flex items-center justify-center'>
-          <div className='text-2xl pb-15 font-normal text-sobre-mi text-justify'>
+          <div className='text-2xl font-normal text-sobre-mi text-justify'>
 
             <div className='py-1.5'>Comencé hace ya unos años con interés por este fantástico mundo de la programación.</div>
 
@@ -127,21 +145,44 @@ function Home() {
       </div>
 
       {/** Proyectos */}
-      <div className='bg-gradient-to-br from-black via-gray-900 to-neutral-800 flex flex-col items-center justify-center'>
-        <h2 className='text-5xl my-8 fuente-blanca'>Proyectos</h2>
+      <div className='bg-gradient-to-br from-black via-gray-900 to-neutral-800 flex flex-col items-center justify-center py-15'>
+        <h2 className='text-5xl mb-8 fuente-blanca'>Proyectos</h2>
 
         {/** Carrusel de proyectos */}
         <div className='flex justify-center items-center mb-10 px-4'>
-            <div className='w-full max-w-4xl mx-auto p-6 bg-gradient-to-r from-red-500 to-yellow-400 rounded-xl shadow-lg text-white'>
-              <Carrusel/>
-            </div>
+          <div className='hidden lg:block w-full max-w-4xl mx-auto p-6 bg-gradient-to-r from-red-500 to-yellow-400 rounded-xl shadow-lg text-white'>
+            <Carrusel />
+          </div>
+          <div className='block lg:hidden w-full max-w-4xl mx-auto p-6 bg-gradient-to-r from-red-500 to-yellow-400 rounded-xl shadow-lg text-white'>
+            <ProyectosMobil />
+          </div>
         </div>
 
 
       </div>
 
       {/** Educación */}
+      <div className='flex flex-col items-center justify-center font-bold fondo-blanco py-15'>
+        <h2 className='text-5xl text-neutral-900'>Educación</h2>
 
+        <div className='w-3/4 flex items-center justify-center'>
+          <div className='text-center'>
+            {estudios.map((estudio, i) => (
+              <div>
+                <h3 className='py-1.5 text-sobre-mi-detalle font-semibold text-3xl mt-8'>{estudio.titulo}</h3>
+                <h4 className='text-xl italic font-light'>{estudio.instituto}</h4>
+                <p className='text-sobre-mi-detalle font-light mb-5'>{estudio.fecha}</p>
+                <a
+                  href="#"
+                  className={`py-2 px-5 text-sm text-white rounded-full ${estudio.terminado ? 'fondo-sobre-mi-detalle' : 'fondo_boton_disabled'}`}
+                >
+                  {estudio.tipo_comprobante}
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
 
       {/** Tecnologías */}
 
