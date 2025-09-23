@@ -8,17 +8,18 @@ const proyectos = [
         descripcion: 'Gestión de carga, envío y préstamos con autenticación por token, roles y vistas personalizadas',
         imagen: '/img/freezer-app.png',
         tecnologias: ['HTML', 'CSS', 'Javascript', 'React', 'Node.js', 'Express.js', 'MySQL', 'Git'],
-        github: 'https://github.com/CeliFioretti/logirefrigeracion'
+        github: 'https://github.com/CeliFioretti/logirefrigeracion',
+        terminado: true
     },
     {
         titulo: 'Chat App',
-        descripcion: 'Una aplicación de chat',
-        imagen: '/img/chat-app.png',
+        descripcion: 'Aplicación de mensajería online con registro, login y envío de mensajes en tiempo real. Enfocada en seguridad, escalabilidad y experiencia de usuario.',
+        imagen: '/img/no-disponible.png',
         tecnologias: ['HTML', 'CSS', 'Javascript', 'React', 'Node.js', 'Express.js', 'Next.js', 'Tailwind', 'PostgreSQL', 'Git'],
-        github: 'https://github.com/CeliFioretti/chaty-app'
+        github: 'https://github.com/CeliFioretti/chaty-app',
+        terminado: false
     }
 ]
-
 const logos = {
     Javascript:
         'https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black',
@@ -50,7 +51,7 @@ function ProyectosMobil() {
     return (
         <div>
             {proyectos.map((proyecto, i) => (
-                <div key={i} className='bg-neutral-900 rounded-xl p-5 mb-8 text-center flex flex-col items-center justify-center '>
+                <div key={i} className={`rounded-xl p-5 mb-8 text-center flex flex-col items-center justify-center ${proyecto.terminado ? 'bg-neutral-900' : 'bg-neutral-900 opacity-60'}`}>
                     <img src={proyecto.imagen} alt={proyecto.titulo} className="w-full h-auto max-h-[400px] object-cover rounded-lg mb-4" />
 
                     <h3 className="text-3xl font-semibold">{proyecto.titulo}</h3>

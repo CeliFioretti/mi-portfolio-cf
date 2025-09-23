@@ -9,8 +9,8 @@ function Tecnologias() {
 
                 {/** Lenguajes de Programación */}
                 <div className=''>
-                    <h3 className='bg-gradient-to-r from-red-500 to-yellow-400 text-4xl text-amber-50 ps-8 py-2 font-semibold w-2/5'>Lenguajes de programación</h3>
-                    <div className='flex gap-8 my-8 ps-8'>
+                    <h3 className='bg-gradient-to-r from-red-500 to-yellow-400 text-4xl text-amber-50 ps-8 py-2 font-semibold md:w-2/5'>Lenguajes de programación</h3>
+                    <div className='flex flex-wrap gap-8 my-8 ps-8'>
                         {/** Javascript */}
                         <div className="relative group w-20 h-20">
                             <img
@@ -38,8 +38,8 @@ function Tecnologias() {
 
                 {/** Frameworks */}
                 <div className=''>
-                    <h3 className='bg-gradient-to-r from-red-500 to-yellow-400 text-4xl text-amber-50 ps-8 py-2 font-semibold w-3/5'>Frameworks y Librerías</h3>
-                    <div className='flex gap-8 my-8 ps-8'>
+                    <h3 className='bg-gradient-to-r from-red-500 to-yellow-400 text-4xl text-amber-50 ps-8 py-2 font-semibold md:w-3/5'>Frameworks y Librerías</h3>
+                    <div className='flex flex-wrap gap-8 my-8 ps-8'>
                         {/** React */}
                         <div className="relative group w-20 h-20">
                             <img
@@ -68,7 +68,7 @@ function Tecnologias() {
 
                         {/** Express.js */}
                         <div className="relative group w-20 h-20">
-                            <div class="p-2 bg-white rounded-full flex items-center justify-center">
+                            <div className="p-2 bg-white rounded-full flex items-center justify-center">
                                 <img
                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
                                     alt="Express.js"
@@ -108,8 +108,8 @@ function Tecnologias() {
 
                 {/** Softwares y Herramientas */}
                 <div className=''>
-                    <h3 className='bg-gradient-to-r from-red-500 to-yellow-400 text-4xl text-amber-50 ps-8 py-2 font-semibold w-4/5'>Softwares y Herramientas</h3>
-                    <div className='flex gap-8 my-8 ps-8'>
+                    <h3 className='bg-gradient-to-r from-red-500 to-yellow-400 text-4xl text-amber-50 ps-8 py-2 font-semibold md:w-4/5'>Softwares y Herramientas</h3>
+                    <div className='flex flex-wrap gap-8 my-8 ps-8'>
                         {/** HTML */}
                         <div className="relative group w-20 h-20">
                             <img
@@ -136,7 +136,7 @@ function Tecnologias() {
 
                         {/** Wordpress */}
                         <div className="relative group w-20 h-20">
-                            <div class="p-3 bg-white rounded-full flex items-center justify-center">
+                            <div className="p-3 bg-white rounded-full flex items-center justify-center">
                                 <img
                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg"
                                     alt="Wordpress"
@@ -174,7 +174,7 @@ function Tecnologias() {
 
                         {/** Markdown */}
                         <div className="relative group w-20 h-20">
-                            <div class="p-2 bg-white rounded-full flex items-center justify-center">
+                            <div className="p-2 bg-white rounded-full flex items-center justify-center">
                                 <img
                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg"
                                     alt="Markdown"
@@ -216,7 +216,7 @@ function Tecnologias() {
                 <div className=''>
                     <h3 className='bg-gradient-to-r from-red-500 to-yellow-400 text-4xl text-amber-50 ps-8 py-2 font-semibold'>Actualmente aprendiendo</h3>
 
-                    <div className='flex gap-8 my-8 ps-8'>
+                    <div className='flex flex-wrap gap-8 my-8 ps-8'>
                         {/** Csharp */}
                         <div className="relative group w-20 h-20">
                             <img

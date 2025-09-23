@@ -12,22 +12,34 @@ function Home() {
     <div className='animate-fade-in'>
 
       {/** Navbar y Presentación */}
-      <NavbarMain/>
+      <section id='inicio'>
+        <NavbarMain />
+      </section>
 
       {/** Sobre mí */}
-      <SobreMi />
+      <section id='sobre-mi'>
+        <SobreMi />
+      </section>
 
       {/** Proyectos */}
-      <Proyectos />
+      <section id='proyectos'>
+        <Proyectos />
+      </section>
 
       {/** Educación */}
-      <Educacion />
+      <section id='educacion'>
+        <Educacion />
+      </section>
 
       {/** Tecnologías */}
-      <Tecnologias />
+      <section id='tecnologias'>
+        <Tecnologias />
+      </section>
 
       {/** Hablamos */}
-      <Hablamos />
+      <section id='contacto'>
+        <Hablamos />
+      </section>
 
       {/** Footer */}
       <Footer />

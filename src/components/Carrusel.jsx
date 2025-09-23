@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import { useEffect } from 'react';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
@@ -60,6 +61,7 @@ function Carrusel() {
     });
 
 
+
     return (
         <div className='relative w-full max-w-4xl mx-auto'>
             {/**Carrusel */}
@@ -79,13 +81,13 @@ function Carrusel() {
 
                         {proyecto.terminado ? (
                             <a
-                            href={proyecto.github}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="mt-4 text-amber-400 text-lg hover:scale-105 transition-transform duration-300"
-                        >
-                            Ver en Github
-                        </a>
+                                href={proyecto.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="mt-4 text-amber-400 text-lg hover:scale-105 transition-transform duration-300"
+                            >
+                                Ver en Github
+                            </a>
                         ) : (
                             <span className='mt-4 text-gray-400 text-lg cursor-not-allowed'>
                                 En desarrollo
