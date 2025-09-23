@@ -12,14 +12,16 @@ const proyectos = [
         descripcion: 'Gestión de carga, envío y préstamos con autenticación por token, roles y vistas personalizadas',
         imagen: '/img/freezer-app.png',
         tecnologias: ['HTML', 'CSS', 'Javascript', 'React', 'Node.js', 'Express.js', 'MySQL', 'Git'],
-        github: 'https://github.com/CeliFioretti/logirefrigeracion'
+        github: 'https://github.com/CeliFioretti/logirefrigeracion',
+        terminado: true
     },
     {
         titulo: 'Chat App',
-        descripcion: 'Una aplicación de chat',
-        imagen: '/img/chat-app.png',
+        descripcion: 'Aplicación de mensajería online con registro, login y envío de mensajes en tiempo real. Enfocada en seguridad, escalabilidad y experiencia de usuario.',
+        imagen: '/img/no-disponible.png',
         tecnologias: ['HTML', 'CSS', 'Javascript', 'React', 'Node.js', 'Express.js', 'Next.js', 'Tailwind', 'PostgreSQL', 'Git'],
-        github: 'https://github.com/CeliFioretti/chaty-app'
+        github: 'https://github.com/CeliFioretti/chaty-app',
+        terminado: false
     }
 ]
 
@@ -63,11 +65,11 @@ function Carrusel() {
             {/**Carrusel */}
             <div ref={sliderRef} className="keen-slider rounded-xl overflow-hidden">
                 {proyectos.map((proyecto, i) => (
-                    <div key={i} className="keen-slider__slide min-w-full flex flex-col items-center p-4 sm:p-6 bg-neutral-900 rounded-xl text-white">
+                    <div key={i} className={`keen-slider__slide min-w-full flex flex-col items-center p-4 sm:p-6 rounded-xl text-white ${proyecto.terminado ? 'bg-neutral-900' : 'bg-neutral-900 opacity-60'}`}>
                         <img src={proyecto.imagen} alt={proyecto.titulo} className="w-full h-auto max-h-[400px] object-cover rounded-lg mb-4" />
 
                         <h3 className="text-3xl font-semibold">{proyecto.titulo}</h3>
-                        <p className="text-xl text-justify leading-relaxed mt-2 mb-2">{proyecto.descripcion}</p>
+                        <p className="text-xl text-justify leading-relaxed py-5">{proyecto.descripcion}</p>
 
                         <div className="flex flex-wrap gap-2 justify-center">
                             {proyecto.tecnologias.map((tech, i) => (
@@ -75,7 +77,8 @@ function Carrusel() {
                             ))}
                         </div>
 
-                        <a
+                        {proyecto.terminado ? (
+                            <a
                             href={proyecto.github}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -83,6 +86,11 @@ function Carrusel() {
                         >
                             Ver en Github
                         </a>
+                        ) : (
+                            <span className='mt-4 text-gray-400 text-lg cursor-not-allowed'>
+                                En desarrollo
+                            </span>
+                        )}
                     </div>
                 ))}
             </div>
