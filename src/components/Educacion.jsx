@@ -5,7 +5,7 @@ const estudios = [
     titulo: 'Tecnica en Desarrollo de Aplicaciones Informáticas',
     instituto: 'Instituto Universitario Aeronáutico (IUA)',
     fecha: '2023 - 2025',
-    tipo_comprobante: 'Diploma',
+    tipo_comprobante: 'Diploma en proceso',
     terminado: true
   },
   {

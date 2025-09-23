@@ -13,7 +13,8 @@ function Main() {
                 <div className='flex gap-6 mb-6'>
 
                     <a
-                        href="#"
+                        href="/cv_celina_fioretti.pdf"
+                        download
                         className="py-2 px-5 text-sm text-white rounded-full bg-gradient-to-r from-red-500 to-yellow-400 hover:from-red-600 hover:to-yellow-500 animate-pulse-glow transition-all duration-300"
                     >
                         Descargar CV

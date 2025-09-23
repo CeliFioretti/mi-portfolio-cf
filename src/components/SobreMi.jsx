@@ -29,7 +29,7 @@ function SobreMi() {
                     <div className='text-zinc-950 text-sm flex items-center justify-center gap-2 p-2'>
                         <FontAwesomeIcon icon={faEnvelope} className="hover:text-amber-500 transition-colors duration-300 text-2xl" />
                         <div className='data-box text-lg rounded-lg p-1.5 w-96 font-normal'>
-                            <span className='font-medium'>Correo</span>: <span className='text-blue-600 underline hover:text-blue-500'>celinainesfioretti@gmail.com</span>
+                            <span className='font-medium'>Correo</span>: <span className='text-blue-600 underline hover:text-blue-500 cursor-pointer'>celinainesfioretti@gmail.com</span>
                         </div>
                     </div>
 
