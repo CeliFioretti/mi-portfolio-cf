@@ -65,7 +65,20 @@ body{
   background-color: #f07b3f;
 }
 
+.fondo-sobre-mi-detalle:hover{
+ background-color: #f18b58;;
+}
+
 .fondo_boton_disabled{
   background-color: rgba(195, 186, 185, 0.71);
 }
+
+.boton-enviar{
+  background-color: #f07b3f;
+}
+
+.boton-enviar:hover{
+  background-color: #f18b58;
+}
+
 
