@@ -63,13 +63,20 @@ function ProyectosMobil() {
                         ))}
                     </div>
 
-                    <a
-                        href={proyecto.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-4 text-amber-400 text-lg hover:scale-105 transition-transform duration-300"
-                    >Ver en Github
-                    </a>
+                    {proyecto.terminado ? (
+                        <a
+                            href={proyecto.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-4 text-amber-400 text-lg hover:scale-105 transition-transform duration-300"
+                        >
+                            Ver en Github
+                        </a>
+                    ) : (
+                        <span className='mt-4 text-gray-400 text-lg cursor-not-allowed'>
+                            En desarrollo
+                        </span>
+                    )}
                 </div>
             ))}
         </div>

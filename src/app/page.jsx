@@ -4,8 +4,8 @@ import Proyectos from '@/components/Proyectos';
 import Educacion from '@/components/Educacion';
 import Tecnologias from '@/components/Tecnologias';
 import Hablamos from '@/components/Hablamos';
-import NavbarMain from '@/components/NavbarMain';
 import Footer from '@/components/Footer';
+import NavbarMain from '@/components/NavbarMain';
 
 function Home() {
   return (
@@ -13,7 +13,7 @@ function Home() {
 
       {/** Navbar y Presentación */}
       <section id='inicio'>
-        <NavbarMain />
+        <NavbarMain/>
       </section>
 
       {/** Sobre mí */}
