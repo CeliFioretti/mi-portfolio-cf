@@ -3,7 +3,7 @@
 ¡Bienvenido/a a mi portfolio! 🚀  
 Este proyecto fue creado para mostrar mi recorrido como **Desarrolladora Fullstack Web Junior**, mis proyectos, tecnologías y un poco más sobre mí.  
 
-🔗 **Visita mi portfolio en línea:** [Enlace](#)
+🔗 **Visita mi portfolio en línea:** [Enlace](https://mi-cv-celina-fioretti.vercel.app)
 
 ---
 
