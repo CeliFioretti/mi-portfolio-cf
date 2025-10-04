@@ -43,8 +43,8 @@ Este portfolio fue desarrollado con:
 Si quieres ponerte en contacto conmigo:  
 
 - ✉️ **Email:** [celinainesfioretti@gmail.com](mailto:celinainesfioretti@gmail.com)  
-- 💼 [LinkedIn]([https://www.linkedin.com/in/tu-perfil](https://www.linkedin.com/in/celina-fioretti/))  
-- 🕹️ [Mi Perfil]([https://github.com/tu-usuario](https://github.com/CeliFioretti))  
+- 💼 [LinkedIn](https://www.linkedin.com/in/celina-fioretti)  
+- 🕹️ [Mi Perfil](https://github.com/CeliFioretti)  
 
 ---
 
