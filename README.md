@@ -3,7 +3,7 @@
 ¡Bienvenido/a a mi portfolio! 🚀  
 Este proyecto fue creado para mostrar mi recorrido como **Desarrolladora Fullstack Web Junior**, mis proyectos, tecnologías y un poco más sobre mí.  
 
-🔗 **Visita mi portfolio en línea:** [Enlace](#)
+🔗 **Visita mi portfolio en línea:** [Enlace](https://mi-cv-celina-fioretti.vercel.app)
 
 ---
 
@@ -43,8 +43,8 @@ Este portfolio fue desarrollado con:
 Si quieres ponerte en contacto conmigo:  
 
 - ✉️ **Email:** [celinainesfioretti@gmail.com](mailto:celinainesfioretti@gmail.com)  
-- 💼 [LinkedIn]([https://www.linkedin.com/in/tu-perfil](https://www.linkedin.com/in/celina-fioretti/))  
-- 🕹️ [Mi Perfil]([https://github.com/tu-usuario](https://github.com/CeliFioretti))  
+- 💼 [LinkedIn](https://www.linkedin.com/in/celina-fioretti)  
+- 🕹️ [Mi Perfil](https://github.com/CeliFioretti)  
 
 ---
 
