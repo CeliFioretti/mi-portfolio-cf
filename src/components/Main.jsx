@@ -7,7 +7,7 @@ function Main() {
         <main className='p-8 md:flex items-center justify-between'>
 
             <div className='flex flex-col items-center justify-center w-full'>
-                <h2 className='text-4xl fuente-blanca italic mb-6'>Desarrolladora Fullstack Web Junio</h2>
+                <h2 className='text-4xl fuente-blanca italic mb-6'>Desarrolladora Fullstack Junior</h2>
                 <h1 className='text-6xl mb-8 color-fuente-naranja font-[900]'>Celina Fioretti</h1>
 
                 <div className='flex gap-6 mb-6'>
