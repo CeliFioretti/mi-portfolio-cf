@@ -44,7 +44,7 @@ function Main() {
             {/** Imagen Avatar */}
             <div className='w-full flex justify-center items-center'>
                 <img
-                    src="/img/imagen-avatar.jpg" alt="Imagen propia" className="w-80 h-80 rounded-full shadow-xl shadow-black/40"
+                    src="/img/avatar.jpg" alt="Imagen propia" className="w-80 h-80 rounded-full shadow-xl shadow-black/40"
                 />
             </div>
         </main>
