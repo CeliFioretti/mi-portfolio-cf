@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faDiscord } from '@fortawesome/free-brands-svg-icons';
 
@@ -43,8 +44,13 @@ function Main() {
 
             {/** Imagen Avatar */}
             <div className='w-full flex justify-center items-center'>
-                <img
-                    src="/img/avatar.jpg" alt="Imagen propia" className="w-80 h-80 rounded-full shadow-xl shadow-black/40"
+                <Image
+                    src="/img/avatar.jpg"
+                    alt="Imagen propia"
+                    width={320}
+                    height={320}
+                    className="w-80 h-80 rounded-full shadow-xl shadow-black/40 object-cover"
+                    priority
                 />
             </div>
         </main>

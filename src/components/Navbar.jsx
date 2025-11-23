@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import React from 'react'
+import { navigation } from '@/data/portfolioData';
 
 function Navbar() {
     const [open, setOpen] = useState(false)
@@ -17,23 +18,17 @@ function Navbar() {
             {/** Menú desplegable en sm */}
             <nav className={`overflow-hidden transition-all duration-300 ease-in-out md:hidden  ${open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                 } mt-4 space-y-2 `}>
-                <a className='block hover:text-amber-500 px-4 py-2 text-center' href="#inicio">Inicio</a>
-                <a className='block hover:text-amber-500 px-4 py-2 text-center' href="#sobre-mi">Sobre mí</a>
-                <a className='block hover:text-amber-500 px-4 py-2 text-center' href="#proyectos">Proyectos</a>
-                <a className='block hover:text-amber-500 px-4 py-2 text-center' href="#educacion">Educación</a>
-                <a className='block hover:text-amber-500 px-4 py-2 text-center' href="#tecnologias">Tecnologías</a>
-                <a className='block hover:text-amber-500 px-4 py-2 text-center' href="#contacto">Contacto</a>
+                {navigation.map((item, i) => (
+                    <a key={i} className='block hover:text-amber-500 px-4 py-2 text-center' href={item.href}>{item.label}</a>
+                ))}
             </nav>
 
             {/** Menú horizontal en md+ */}
             <div className='flex items-center justify-center '>
                 <nav className='hidden md:grid md:max-w-6xl md:w-full p-3 md:grid-cols-6 text-amber-50 md:divide-x md:divide-amber-50 text-sm'>
-                    <a className='block hover:text-amber-500 px-4 py-2 text-center' href="#inicio">Inicio</a>
-                    <a className='block hover:text-amber-500 px-4 py-2 text-center' href="#sobre-mi">Sobre mí</a>
-                    <a className='block hover:text-amber-500 px-4 py-2 text-center' href="#proyectos">Proyectos</a>
-                    <a className='block hover:text-amber-500 px-4 py-2 text-center' href="#educacion">Educación</a>
-                    <a className='block hover:text-amber-500 px-4 py-2 text-center' href="#tecnologias">Tecnologías</a>
-                    <a className='block hover:text-amber-500 px-4 py-2 text-center' href="#contacto">Contacto</a>
+                    {navigation.map((item, i) => (
+                        <a key={i} className='block hover:text-amber-500 px-4 py-2 text-center' href={item.href}>{item.label}</a>
+                    ))}
                 </nav>
             </div>
         </header>
