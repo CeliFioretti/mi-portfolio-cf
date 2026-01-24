@@ -1,6 +1,7 @@
 import globals from '@/app/globals.css'
 import { Roboto } from 'next/font/google';
 import { config } from '@fortawesome/fontawesome-svg-core';
+import { Analytics } from "@vercel/analytics/next"
 import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
 
@@ -55,8 +56,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es" className={roboto.className}>
       <body>
-
         {children}
+        <Analytics />
       </body>
     </html>
   );
