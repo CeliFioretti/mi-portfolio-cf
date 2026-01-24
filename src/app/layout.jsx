@@ -15,8 +15,8 @@ export const metadata = {
   title: "Mi Portfolio CF | Celina Fioretti",
   description: "Explora mi trabajo como desarrolladora de software: proyectos, habilidades, experiencia y enfoque en buenas prácticas y seguridad.",
   metadataBase: new URL('https://mi-cv-celina-fioretti.vercel.app/'),
-  keywords: ["Desarrollo Web", "Fullstack", "React", "Next.js", "JavaScript", "Portfolio", "Celina Fioretti"],
-  authors: [{ name: "Celina Fioretti" }],
+  keywords: ["Desarrollo Web", "Fullstack", "React", "Next.js", "JavaScript", "Portfolio", "Celina Fioretti", "Desarrolladora Software"],
+  authors: [{ name: "Celina Fioretti", url: "https://mi-cv-celina-fioretti.vercel.app/" }],
   creator: "Celina Fioretti",
   openGraph: {
     title: "Mi Portfolio CF | Celina Fioretti",
@@ -39,6 +39,7 @@ export const metadata = {
     title: "Mi Portfolio CF | Celina Fioretti",
     description: "Explora mi trabajo como desarrolladora de software: proyectos, habilidades, experiencia y enfoque en buenas prácticas y seguridad.",
     images: ["/img/avatar.jpg"],
+    creator: "@CeliFioretti",
   },
   robots: {
     index: true,

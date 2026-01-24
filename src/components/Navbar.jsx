@@ -10,7 +10,7 @@ function Navbar() {
     return (
         <header className='text-amber-50 p-4 '>
             <div className='flex justify-between items-center md:hidden'>
-                <button onClick={() => { setOpen(!open) }} className='text-amber-50 focus:outline-none cursor-pointer'>
+                <button onClick={() => { setOpen(!open) }} className='text-amber-50 focus:outline-none cursor-pointer' aria-label='Menú'>
                     ☰
                 </button>
             </div>

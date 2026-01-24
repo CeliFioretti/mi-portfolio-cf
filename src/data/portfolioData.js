@@ -66,3 +66,27 @@ export const personalInfo = {
         discord: 'https://discordapp.com/users/778703131978366976'
     }
 };
+
+export const hero = {
+    title: "Desarrolladora Fullstack Junior",
+    name: "Celina Fioretti",
+    available: "Disponible para trabajar",
+    cvUrl: "/01-CV-CelinaFioretti-ES.pdf"
+};
+
+export const aboutMe = {
+    title: "Sobre mí",
+    details: [
+        { label: "Edad", value: "30", icon: "faUser" },
+        { label: "Residencia", value: "Argentina, Mendoza", icon: "faLocationDot" },
+        { label: "Correo", value: "celinainesfioretti@gmail.com", icon: "faEnvelope", link: "mailto:celinainesfioretti@gmail.com" },
+        { label: "Teléfono", value: "(+54) 2612525080", icon: "faPhone" }
+    ],
+    description: [
+        "Comencé hace ya unos años con interés por este fantástico mundo de la programación.",
+        "Realicé algunos cursos y al final decidí iniciar una carrera profesional.",
+        "En esos años logré afianzar diversos conceptos que abrieron mi mente para mejorar en el desarrollo de aplicaciones.",
+        "También obtuve experiencia trabajando en equipo con mis compañeros y desarrollando pequeños y grandes proyectos.",
+        "Actualmente sigo instruyéndome en otras tecnologías mientras busco mi primer trabajo profesional."
+    ]
+};
