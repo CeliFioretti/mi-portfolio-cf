@@ -14,6 +14,7 @@ const roboto = Roboto({
 export const metadata = {
   title: "Mi Portfolio CF | Celina Fioretti",
   description: "Explora mi trabajo como desarrolladora de software: proyectos, habilidades, experiencia y enfoque en buenas prácticas y seguridad.",
+  metadataBase: new URL('https://mi-cv-celina-fioretti.vercel.app/'),
   keywords: ["Desarrollo Web", "Fullstack", "React", "Next.js", "JavaScript", "Portfolio", "Celina Fioretti"],
   authors: [{ name: "Celina Fioretti" }],
   creator: "Celina Fioretti",
@@ -55,7 +56,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es" className={roboto.className}>
-      <body>
+      <body suppressHydrationWarning={true}>
         {children}
         <Analytics />
       </body>

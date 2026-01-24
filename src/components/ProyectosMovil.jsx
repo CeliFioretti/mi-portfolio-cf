@@ -4,7 +4,7 @@ import React from 'react'
 import Image from 'next/image';
 import { projects, techLogos } from '@/data/portfolioData';
 
-function ProyectosMobil() {
+function ProyectosMovil() {
 
     return (
         <div>
@@ -49,4 +49,4 @@ function ProyectosMobil() {
     )
 }
 
-export default ProyectosMobil
+export default ProyectosMovil

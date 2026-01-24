@@ -1,5 +1,5 @@
 import React from 'react'
-import ProyectosMobil from '@/components/ProyectosMobil';
+import ProyectosMovil from '@/components/ProyectosMovil';
 import Carrusel from '@/components/Carrusel';
 
 function Proyectos() {
@@ -13,7 +13,7 @@ function Proyectos() {
                     <Carrusel />
                 </div>
                 <div className='block lg:hidden w-full max-w-4xl mx-auto p-6 bg-gradient-to-r from-red-500 to-yellow-400 rounded-xl shadow-lg text-white'>
-                    <ProyectosMobil />
+                    <ProyectosMovil />
                 </div>
             </div>
 
