@@ -1,29 +1,34 @@
 import React from 'react';
 
 const technologies = {
-    languages: [
-        { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
-        { name: 'Java', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
-    ],
-    frameworks: [
-        { name: 'React.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
-        { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg', bgWhite: true },
-        { name: 'Express.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg', bgWhite: true },
-        { name: 'Tailwind CSS', icon: 'https://cdn.simpleicons.org/tailwindcss/38B2AC' },
-        { name: 'Bootstrap', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg' },
-    ],
-    tools: [
+    frontend: [
         { name: 'HTML', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
         { name: 'CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
-        { name: 'Wordpress', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg', bgWhite: true },
-        { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
-        { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
-        { name: 'Markdown', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg', bgWhite: true },
+        { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+        { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
+        { name: 'React.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+        { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg', bgWhite: true },
+        { name: 'Tailwind CSS', icon: 'https://cdn.simpleicons.org/tailwindcss/38B2AC' },
+    ],
+    backend: [
         { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
+        { name: 'Express.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg', bgWhite: true },
+        { name: 'Prisma', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg', bgWhite: true },
+        { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
+        { name: 'Supabase', icon: 'https://cdn.simpleicons.org/supabase/3ECF8E' },
+        { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
+        { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
+    ],
+    toolsAndOthers: [
+        { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
         { name: 'npm', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg' },
+        { name: 'Wordpress', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg', bgWhite: true },
+        { name: 'n8n', icon: 'https://cdn.simpleicons.org/n8n/FF6D5A' },
     ],
     learning: [
-        { name: 'Csharp', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg' },
+        { name: 'TanStack Query', icon: 'https://cdn.simpleicons.org/reactquery/FF4154' },
+        { name: 'Auth.js', icon: 'https://authjs.dev/img/logo-sm.png' }, 
+        { name: 'Vitest', icon: 'https://cdn.simpleicons.org/vitest/6E9F18' },
     ]
 };
 
@@ -57,21 +62,21 @@ function Tecnologias() {
 
             <div>
 
-                {/* Lenguajes de Programación */}
+                {/* FrontEnd */}
                 <div>
-                    <h3 className='bg-gradient-to-r from-red-500 to-yellow-400 text-4xl text-amber-50 ps-8 py-2 font-semibold md:w-2/5'>Lenguajes de programación</h3>
+                    <h3 className='bg-gradient-to-r from-red-500 to-yellow-400 text-4xl text-amber-50 ps-8 py-2 font-semibold '>FrontEnd</h3>
                     <div className='flex flex-wrap gap-8 my-8 ps-8'>
-                        {technologies.languages.map((tech) => (
+                        {technologies.frontend.map((tech) => (
                             <TechItem key={tech.name} tech={tech} />
                         ))}
                     </div>
                 </div>
 
-                {/* Frameworks */}
+                {/* BackEnd */}
                 <div>
-                    <h3 className='bg-gradient-to-r from-red-500 to-yellow-400 text-4xl text-amber-50 ps-8 py-2 font-semibold md:w-3/5'>Frameworks y Librerías</h3>
+                    <h3 className='bg-gradient-to-r from-red-500 to-yellow-400 text-4xl text-amber-50 ps-8 py-2 font-semibold '>BackEnd</h3>
                     <div className='flex flex-wrap gap-8 my-8 ps-8'>
-                        {technologies.frameworks.map((tech) => (
+                        {technologies.backend.map((tech) => (
                             <TechItem key={tech.name} tech={tech} />
                         ))}
                     </div>
@@ -79,15 +84,15 @@ function Tecnologias() {
 
                 {/* Softwares y Herramientas */}
                 <div>
-                    <h3 className='bg-gradient-to-r from-red-500 to-yellow-400 text-4xl text-amber-50 ps-8 py-2 font-semibold md:w-4/5'>Softwares y Herramientas</h3>
+                    <h3 className='bg-gradient-to-r from-red-500 to-yellow-400 text-4xl text-amber-50 ps-8 py-2 font-semibold '>Softwares y Herramientas</h3>
                     <div className='flex flex-wrap gap-8 my-8 ps-8'>
-                        {technologies.tools.map((tech) => (
+                        {technologies.toolsAndOthers.map((tech) => (
                             <TechItem key={tech.name} tech={tech} />
                         ))}
                     </div>
                 </div>
 
-                {/* Actualmente aprendiendo */}
+                {/* Aprendiendo */}
                 <div>
                     <h3 className='bg-gradient-to-r from-red-500 to-yellow-400 text-4xl text-amber-50 ps-8 py-2 font-semibold'>Actualmente aprendiendo</h3>
 

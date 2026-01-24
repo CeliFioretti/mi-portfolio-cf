@@ -38,14 +38,7 @@ export const education = [
         fecha: '2023 - 2025',
         tipo_comprobante: 'Diploma en proceso',
         terminado: true
-    },
-    {
-        titulo: 'Ciberseguridad de Google (8 cursos)',
-        instituto: 'Coursera',
-        fecha: '2025 - En curso',
-        tipo_comprobante: 'Certificado',
-        terminado: false
-    },
+    }
 ];
 
 export const navigation = [

@@ -13,7 +13,7 @@ function SobreMi() {
                     <div className='text-zinc-950 text-sm flex items-center justify-center gap-2 p-2'>
                         <FontAwesomeIcon icon={faUser} className="hover:text-amber-500 transition-colors duration-300 text-2xl" />
                         <div className='data-box text-lg rounded-lg p-1.5 w-96 font-normal'>
-                            <span className='font-medium'>Edad</span>: 29
+                            <span className='font-medium'>Edad</span>: 30
                         </div>
                     </div>
 
@@ -36,7 +36,7 @@ function SobreMi() {
                     <div className='text-zinc-950 text-sm flex items-center justify-center gap-2 p-2'>
                         <FontAwesomeIcon icon={faPhone} className="hover:text-amber-500 transition-colors duration-300 text-2xl" />
                         <div className='data-box text-lg rounded-lg p-1.5 w-96 font-normal'>
-                            <span className='font-medium'>Teléfono</span>: 2612525080
+                            <span className='font-medium'>Teléfono</span>: (+54) 2612525080
                         </div>
                     </div>
 
