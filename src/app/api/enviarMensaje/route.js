@@ -30,7 +30,7 @@ export async function POST(request) {
     <div style="font-family: sans-serif; padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
       <h2 style="color: #333;">Hola ${nombre},</h2>
       <p style="font-size: 16px; color: #555;">
-        ¡Gracias por ponerte en contacto! Recibí tu mensaje correctamente y me pondré en contacto contigo lo antes posible.
+        ¡Gracias por ponerte en contacto! Recibí tu mensaje correctamente. Pronto me comunicaré contigo.
       </p>
       <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;" />
       <p style="font-size: 14px; color: #777;">
